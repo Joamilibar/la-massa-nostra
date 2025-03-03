@@ -166,8 +166,9 @@ main {
 /* *************** */
 
 .footer {
-  padding-top: max(2rem);
+  padding-top: max(32px);
   font-size: 1.4rem;
+  border-top: 2px solid #9974388b;
 }
 
 .order {

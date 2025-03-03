@@ -17,11 +17,9 @@ export default function Footer() {
   return (
     <>
       <div className="footer">
-        <div>
-          <a href={orderNumber} target="_blank">
-            <button className="btn">Order</button>
-          </a>
-        </div>
+        <a href={orderNumber} target="_blank">
+          <button className="btn">Ordenar</button>
+        </a>
       </div>
     </>
   );
