@@ -1,3 +1,7 @@
+import React from "react";
+import { orderNumber } from "../../../data/data.js";
+import "../../../index.css";
+
 export default function Footer() {
   const hour = new Date().getHours();
   const openHour = 12;
@@ -11,27 +15,27 @@ export default function Footer() {
   // if (!isOpen) return <p>CLOSED</p>;
 
   return (
-    <footer className="footer">
-      {isOpen ? (
-        <Order closeHour={closeHour} openHour={openHour} />
-      ) : (
-        <p>
-          Abrimos a las {openHour}:00 hasta las {closeHour}:00 horas.
-        </p>
-      )}
-    </footer>
+    <>
+      <div className="footer">
+        <div>
+          <a href={orderNumber} target="_blank">
+            <button className="btn">Order</button>
+          </a>
+        </div>
+      </div>
+    </>
   );
 
   // return React.createElement("footer", null, "We're currently open!");
 }
 
-function Order({ closeHour, openHour }) {
-  return (
-    <div className="order">
-      <p>
-        Estamos abiertos desde las {openHour}:00 hasta las {closeHour}:00 horas
-      </p>
-      {/* <button className="btn">Order</button> */}
-    </div>
-  );
-}
+// function Order({ closeHour, openHour }) {
+//   return (
+//     <div className="order">
+//       <p>
+//         Estamos abiertos desde las {openHour}:00 hasta las {closeHour}:00 horas
+//       </p>
+//       {/* <button className="btn">Order</button> */}
+//     </div>
+//   );
+// }

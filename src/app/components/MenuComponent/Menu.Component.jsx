@@ -1,5 +1,5 @@
 import React from "react";
-import { pizzaData, orderNumber } from "../../../../public/data";
+import { pizzaData, orderNumber } from "../../../data/data.js";
 import "../../../index.css";
 
 export default function Menu() {
@@ -10,10 +10,11 @@ export default function Menu() {
 
   return (
     <main className="menu">
-      <h2>Menú</h2>
+      <h2>Pizzas</h2>
       <p>
-        Pizzas con ingredientes italianos, escogidos para un sabor auténtico.
-        Hechas en horno de piedra, todo orgánico y delicioso.
+        Pizzas artesanales al estilo napolitanas, con sabores italiano y del
+        América del sur. Elaboradas a la piedra siendo una fusión de sabores
+        única.
       </p>
 
       {numPizzas > 0 ? (
@@ -25,14 +26,12 @@ export default function Menu() {
           </ul>
         </>
       ) : (
-        <p>We're still working on our menu. Please come back later :)</p>
+        <p>We're still working on our menu. Please come back later :</p>
       )}
+
       {/* <button onClick={orderNumber} className="btn">
         Order
       </button> */}
-      <a href={orderNumber} target="_blank">
-        <button className="btn">Order</button>
-      </a>
     </main>
   );
 }

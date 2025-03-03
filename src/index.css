@@ -87,7 +87,7 @@ main {
   flex-direction: column;
   align-items: center;
   gap: max(2rem);
-  padding: 0;
+  padding: 0 0 max (2rem) 0;
 }
 
 .menu h2 {

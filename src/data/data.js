@@ -65,11 +65,22 @@ export const pizzaData = [
   },
   {
     name: "Il calzone del padrino",
-    ingredients: "Pomodoro Ciao, mozarella italiana, 2 ingredientes a elección",
+    ingredients: "pomodoro ciao, mozarella italiana, 2 ingredientes a elección",
     price: 8990,
+    // photoName: "pizzas/prosciutto.jpg",
+    soldOut: false,
+  },
+
+];
+
+export const postresData = [
+  {
+    name: "La Cariñosa",
+    ingredients: "nutella y azucar nevada",
+    price: 6990,
     // photoName: "pizzas/prosciutto.jpg",
     soldOut: false,
   },
 ];
 
-export const orderNumber = "https://wa.me/56941505298?text=Hola,%20quiero%20ordenar"
+export const orderNumber = "https://wa.me/56941505298?text=Hola,%20quiero%20ordenar.%20";
