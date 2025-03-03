@@ -11,14 +11,13 @@ export default function Menu() {
   return (
     <main className="menu">
       <h2>Menú</h2>
+      <p>
+        Pizzas con ingredientes italianos, escogidos para un sabor auténtico.
+        Hechas en horno de piedra, todo orgánico y delicioso.
+      </p>
 
       {numPizzas > 0 ? (
         <>
-          <p>
-            Pizzas con ingredientes italianos, escogidos para un sabor
-            auténtico. Hechas en horno de piedra, todo orgánico y delicioso.
-          </p>
-
           <ul className="pizzas">
             {pizzas.map((pizza) => (
               <Pizza pizzaObj={pizza} key={pizza.name} />

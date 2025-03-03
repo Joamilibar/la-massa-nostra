@@ -136,9 +136,9 @@ main {
 
 .pizza h3 {
   font-size: 3.125rem;
-  font-weight: 400;
+  font-weight: 600;
   font-weight: bolder;
-  color: #9974388b;
+  color: #755420a8;
 }
 
 .pizza p {
@@ -166,6 +166,7 @@ main {
 /* *************** */
 
 .footer {
+  padding-top: max(2rem);
   font-size: 1.4rem;
 }
 
